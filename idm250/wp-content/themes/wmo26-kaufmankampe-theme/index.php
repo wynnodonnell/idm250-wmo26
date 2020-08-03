@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="style.css"><!--This loads the regular style sheet for this file-->
     </head>
     <body>
-        idm250
+    <?php get_header();?>
+Body Content
+<?php get_footer(); ?>
 </body>
 </html>
