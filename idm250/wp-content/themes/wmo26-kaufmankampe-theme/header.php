@@ -11,7 +11,6 @@
 <header class="header">
   <div class="container header__content">
     <img class="header__logo" src="http://www.kaufmankampe.com/images/kka_logo.jpg" alt="This is the logo">
-    <p class="header__logo">wyyyn</p>
 
     <?php wp_nav_menu(['theme_location' => 'primary_menu']);?>
   </div>

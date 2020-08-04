@@ -1,137 +1,126 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-regular-webfont.woff') format('woff');
+    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2');
+    font-style:normal;
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+  }
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-bold-webfont.woff') format('woff');
+    src: url('../fonts/roboto-bold-webfont.woff2') format('woff2');
+    font-style:bold;
+  }
+@font-face {
+    font-family: 'Roboto-Condenced';
+    src: url('../fonts/roboto-boldcondensed-webfont.woff') format('woff');
+    src: url('../fonts/roboto-boldcondensed-webfont.woff2') format('woff2');
+    font-style:bold;
+  }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after, q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 3%;
+:root{
+	--color1: #ACAC70;
+	--color2: #DEDEC6;
+	--color3: #004781;
 }
-
+body{
+	margin:0;
+}
 .header__content {
 	display: flex;
 	justify-content: left;
-	align-items: center;
+	align-items: top;
 	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+	height: 150px;
+	width: 100%;
 }
-.header__logo {
-	max-width: 200px;
+.header__logo{
+	max-width: 266px;
+	filter: drop-shadow(5px 5px 2px #00000030);
+}
+.headerlink1{
+	background-color: var(--color1);
+	display: flex;
 }
 
-.menu {
+.headerlink2{
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	background-color: var(--color2);
 }
-.menu-item {
-	display: block;
-	padding: 0 10px;
+.selected{
+	display: flex;
+	background-color: var(--color3);
 }
-.menu-item a {
-	color: black;
+.foot{
+	color: var(--color3);
+	margin-left: 5rem;
+	margin-right: 5rem;
+	text-align: center;
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+}
+a{
 	text-decoration: none;
 }
-.menu-item:hover {
-	border-bottom: 1px solid red;
+.email{
+	color: var(--color3);
 }
-.menu-item:hover .sub-menu {
-	display: block;
+@media screen and (max-width: 40rem){
+	.foot{
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
 }
-.sub-menu {
-	display: none;
+@media screen and (max-width: 1268px){
+	.foot{
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	.menu-main-menu-container{
+		display: none !important;
+	}
 }
-
-.current-menu-item {
-	border-bottom: 1px solid red;
+.menu-main-menu-container{
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	flex-wrap: nowrap;
+	padding:0;
+	margin:0;
 }
-
-.header {
-	margin-bottom: 50px;
-}
-
-.wp-block-quote {
-	margin-left: 10px;
-	border-left: 1px solid red;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	font-size: 22px;
-	padding-left: 20px;
-}
-.post_title {
-	font-size: 28px;
-}
-.page-builder {
-	margin-top: 50px;
-}
-.page-builder * + * {
-	margin-top: 10px;
-}
-.page-builder h2 {
-	font-size: 40px;
-}
-.page-builder {
-	font-size: 16px;
-}
-
-
-.split-sidebar {
+#menu-main-menu{
 	display: flex;
 }
-.split-sidebar .column-main {
-	width: 70%;
+ul{
+	padding-inline-start: 0px;
+	list-style: none;
+	margin-top: 0;
+	width: 100%;
 }
-.split-sidebar .column-sidebar {
-	width: 30%;
-}
-
-
-.widgettitle {
-	font-size: 20px;
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-
-.footer {
-	padding: 50px 0;
-	background-color: gray;
+.listview {
 	display: flex;
-	justify-content: space-between;
+	width: 100%;
+	height:140px;
+	margin-top: 0;
+	filter: drop-shadow(5px 5px 2px #00000030);
+	font: normal 1.15rem roboto;
+	text-transform: uppercase;
+	flex-grow: 1;
+	align-items: flex-end;
+	justify-content: center;
+	padding-bottom: 10px;
 }
-.footer-menu {
-	width: 40%;
+.color1{
+	background: var(--color1);
+	color:var(--color3);
 }
-.social-menu {
-	width: 40%;
+.color2{
+	background: var(--color2);
+	color:var(--color3);
+}
+.color3{
+	background: var(--color3);
+	color: var(--color2) !important;
 }
