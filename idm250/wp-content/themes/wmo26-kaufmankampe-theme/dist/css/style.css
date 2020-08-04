@@ -67,21 +67,7 @@ a{
 .email{
 	color: var(--color3);
 }
-@media screen and (max-width: 40rem){
-	.foot{
-		margin-left: 1rem;
-		margin-right: 1rem;
-	}
-}
-@media screen and (max-width: 1268px){
-	.foot{
-		margin-left: 1rem;
-		margin-right: 1rem;
-	}
-	.menu-main-menu-container{
-		display: none !important;
-	}
-}
+
 .menu-main-menu-container{
 	display: flex;
 	justify-content: space-evenly;
@@ -111,6 +97,7 @@ ul{
 	align-items: flex-end;
 	justify-content: center;
 	padding-bottom: 10px;
+	letter-spacing: -1px;
 }
 .color1{
 	background: var(--color1);
@@ -122,5 +109,89 @@ ul{
 }
 .color3{
 	background: var(--color3);
-	color: var(--color2) !important;
+	
+}
+.color3 a{
+	color: var(--color2);	display: flex;
+	width: 100%;
+	height:140px;
+	margin-top: 0;
+	filter: drop-shadow(5px 5px 2px #00000030);
+	font: normal 1.15rem roboto;
+	text-transform: uppercase;
+	flex-grow: 1;
+	align-items: flex-end;
+	justify-content: center;
+	padding-bottom: 10px;
+	letter-spacing: -1px;
+}
+.color2 a{
+	color: var(--color3);
+	display: flex;
+	width: 100%;
+	height:140px;
+	margin-top: 0;
+	filter: drop-shadow(5px 5px 2px #00000030);
+	font: normal 1.15rem roboto;
+	text-transform: uppercase;
+	flex-grow: 1;
+	align-items: flex-end;
+	justify-content: center;
+	padding-bottom: 10px;
+	letter-spacing: -1px;
+}
+.color1 a{
+	color: var(--color3);
+	display: flex;
+	width: 100%;
+	height:140px;
+	margin-top: 0;
+	filter: drop-shadow(5px 5px 2px #00000030);
+	font: normal 1.15rem roboto;
+	text-transform: uppercase;
+	flex-grow: 1;
+	align-items: flex-end;
+	justify-content: center;
+	padding-bottom: 10px;
+	letter-spacing: -1px;
+}
+.color1 a:hover{
+ background: linear-gradient(#BCBC8A,var(--color1));
+}
+.color2 a:hover{
+	background: linear-gradient(#F0F0E5,var(--color2));
+
+   }
+.color3 a:hover{
+	background: linear-gradient(#0065B8,var(--color3));
+}
+
+@media screen and (max-width: 40rem){
+	.foot{
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	.header__logo{
+		max-width: 100%;
+		display: block;
+		margin-left:auto;
+		margin-right: auto;
+	}
+}
+@media screen and (max-width: 1190px){
+	.menu-main-menu-container{
+		display: none;
+	}
+}
+.menu-item-58{
+	background-color: var(--color2);
+}
+.menu-item-73{
+	background-color: var(--color2);
+}
+.menu-item-71{
+	background-color: var(--color2);
+}
+.menu-item-75{
+	background-color: var(--color2);
 }
