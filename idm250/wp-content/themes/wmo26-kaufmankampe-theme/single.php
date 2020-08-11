@@ -14,7 +14,7 @@
 
           <?php the_post_thumbnail(); ?>
 
-          <p class="post_meta"><?php the_date('n/j/Y') ?> | <?php  the_category(); ?></p>
+          <p class="post_meta">Posted on: <?php the_date('n/j/Y') ?><?php  the_category(); ?></p>
 
           <div class="intro">
             <?php the_excerpt();?>
