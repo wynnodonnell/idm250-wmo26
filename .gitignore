@@ -1,24 +1,28 @@
-instructor_materials/resources/
+# Ignore
+/public/wp-admin/
+/public/wp-content/plugins
+/public/wp-content/upgrade
+/public/wp-content/uploads
+/public/wp-content/index.php
+/public/wp-config.php
+/public/wp-config-sample.php
+/public/wp-cron.php
+/public/wp-includes/*
+/public/wp-activate.php
+/public/wp-blog-header.php
+/public/wp-comments-post.php
+/public/wp-links-opml.php
+/public/wp-load.php
+/public/wp-login.php
+/public/wp-mail.php
+/public/wp-settings.php
+/public/wp-signup.php
+/public/wp-trackback.php
+/public/xmlrpc.php
+/public/license.txt
+/public/index.php
+/public/.htaccess
+/public/readme.html
 
-# instructor_materials/assignments/02_assignment.md
-# instructor_materials/assignments/03_assignment.md
-instructor_materials/assignments/04_assignment.md
-instructor_materials/assignments/05_assignment.md
-instructor_materials/assignments/final.md
-instructor_materials/assignments/midterm.md
-
-wordpress/wp-config.php
-wordpress/wp-content/advanced-cache.php
-wordpress/wp-content/backup-db/
-wordpress/wp-content/backups/
-wordpress/wp-content/blogs.dir/
-wordpress/wp-content/cache/
-wordpress/wp-content/upgrade/
-wordpress/wp-content/uploads/
-wordpress/wp-content/mu-plugins/
-wordpress/wp-content/wp-cache-config.php
-wordpress/wp-content/plugins/hello.php
-wordpress/wp-content/themes/demo
-wordpress/wp-content/themes/reference
-
-
+# Allow
+!/public/wp-content/themes
